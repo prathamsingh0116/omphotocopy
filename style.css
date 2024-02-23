@@ -202,7 +202,7 @@ p {
 
 /* Hero Section */
 #hero {
-	background-image: url(./hero-bg.png);
+	background-image: url(./photocopy.jpg);
 	background-size: cover;
 	background-position: top center;
 	position: relative;
@@ -477,6 +477,7 @@ p {
 	/* max-width: 400px; */
 	width: 100%;
 }
+
 #contact .contact-item {
 	width: 80%;
 	padding: 20px;
@@ -608,26 +609,6 @@ p {
 	}
 	/* End Services Section */
 
-	/* Project */
-	#projects .project-items {
-		flex-direction: row;
-	}
-	#projects .project-items:nth-child(even) {
-		flex-direction: row-reverse;
-	}
-	#projects .project-items {
-		height: 400px;
-		margin: 10px;
-		width: 90%;
-		border-radius: 0;
-	}
-	#projects .all-projects .project-info {
-		height: 100%;
-	}
-	#projects .all-projects .project-img {
-		height: 100%;
-	}
-	/* End Project */
 
 	/* About */
 	#about .about {
@@ -667,12 +648,18 @@ p {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
-		margin: 0;
+		margin-top: 10rem;
 	}
 	#contact .contact-item {
-		width: 30%;
-		margin: 0;
-		flex-direction: row;
+		width: 40%;
+		margin: 0 auto;
+		flex-direction: column;
+	}
+
+	#contact .contact-item .cta {
+		font-size: 1.9rem;
+		padding: 10px 60px;
+		color: black;
 	}
 	#contact .contact-item .icon {
 		height: 100px;
@@ -683,8 +670,13 @@ p {
 	}
 	#contact .contact-item .contact-info {
 		width: 100%;
-		text-align: left;
-		padding-left: 20px;
+		text-align: center;
+		padding-left: 10px;
+	}
+
+	#contact .contact-item .contact-info h2 {
+		font-size: 1.5rem;
+		letter-spacing: 0.2;
 	}
 	/* End contact  */
 }
